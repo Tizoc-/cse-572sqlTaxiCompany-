@@ -1,0 +1,94 @@
+SQL> @fastcabselect
+
+OFFI STRADDRESS           CITY            POSTC                                 
+---- -------------------- --------------- -----                                 
+B001 1234 Foothill Ave    Fontana         92336                                 
+B002 6789 Baseline Ave    Moreno Valley   92551                                 
+
+
+STAFF FNAME      LNAME      S DOB       PHONE      OFFI                         
+----- ---------- ---------- - --------- ---------- ----                         
+S0001 David      Anguiano   M 20-FEB-90 3425555    B001                         
+S0002 Felipe     Valadez    F 20-MAR-86 4435555    B001                         
+S0003 Hector     Madrigal   M 13-OCT-91 1235555    B002                         
+S0004 Rocio      Tabatai    F 10-SEP-87 8795555    B002                         
+S0005 Danielle   Nolan      F 13-MAR-65 5675555    B001                         
+
+
+STAFF BONUS DRIVE OFFI                                                          
+----- ----- ----- ----                                                          
+S0004       D0001                                                               
+S0002       D0002                                                               
+S0005             B001                                                          
+S0001             B002                                                          
+
+
+CLIEN PHONENO    STRADDRESS           CITY            NAME                 OFFI 
+----- ---------- -------------------- --------------- -------------------- ---- 
+C0001 9095551000 123 University Ave   San Bernardino  Jan Levninson        B001 
+C0002 9095551001 456 Citrus Ave       Fontana         Oscar Martinez       B002 
+C0003 9095551002 789 Siera Ave        Rancho          Holly Flax           B001 
+C0004 9095551003 321 Day Creek Ave    Riverside       Creed Braton         B002 
+
+
+CLIEN BNAME                PHONENO    STRADDRESS           CITY            OFFI 
+----- -------------------- ---------- -------------------- --------------- ---- 
+C1001 Apple                9515551234 111 Tyler Ave        Riverside       B001 
+C1002 Dell                 9515551111 222 Kendal Ave       San Bernardino  B002 
+C1003 Intel                9515552222 333 Highland Ave     Victorville     B001 
+
+
+CONTR     NOJOBS        FEE OFFI CLIEN                                          
+----- ---------- ---------- ---- -----                                          
+A0001        100         50 B001 C1001                                          
+A0002        200         50 B002 C1002                                          
+A0003        300         50 B001 C1003                                          
+
+
+JOBID PICKUPDAT STRADDRESS           CITY            POSTC MILESDRIVEN CHAR     
+----- --------- -------------------- --------------- ----- ----------- ----     
+TAXII CLIEN CONTR STAFF JOBSTATUS                                               
+----- ----- ----- ----- ------------------------------                          
+J0001 08-JAN-19 111 First Ave        Fontana         92336          10 25       
+T0001 C0001       S0004 Complete                                                
+                                                                                
+J0002 08-JAN-19 222 Second Ave       Victorville     92356          40 50       
+T0001       A0001 S0004 Complete                                                
+                                                                                
+J0003 22-MAY-19 333 Third ST         Upland          92367          10 25       
+T0001 C0003       S0002 Incomplete, Taxi flat tire                              
+                                                                                
+
+JOBID PICKUPDAT STRADDRESS           CITY            POSTC MILESDRIVEN CHAR     
+----- --------- -------------------- --------------- ----- ----------- ----     
+TAXII CLIEN CONTR STAFF JOBSTATUS                                               
+----- ----- ----- ----- ------------------------------                          
+J0004 22-MAY-19 444 Fourth St        Riverside       92054          20 50       
+T0001       A0002 S0002 Complete                                                
+                                                                                
+J0005 01-JUN-19 555 Fifth St         Moreno Valley   92059          80 200      
+T0002 C0004       S0004 Complete, Overtime                                      
+                                                                                
+J0006 20-APR-19 666 Sixth St         Ontario         92330           5 50       
+T0004       A0003 S0002 Complete                                                
+                                                                                
+
+6 rows selected.
+
+
+TAXII STAFF ALLOCATED                                                           
+----- ----- ---------                                                           
+T0001 S0004 08-JAN-19                                                           
+T0001 S0002 22-MAY-19                                                           
+T0002 S0004 01-JUN-19                                                           
+T0004 S0002 20-APR-19                                                           
+
+
+TAXII STAFF DRIVE                                                               
+----- ----- -----                                                               
+T0001 S0004 D0001                                                               
+T0002 S0004 D0002                                                               
+T0003 S0004 D0002                                                               
+T0004 S0004 D0002                                                               
+
+SQL> spool off

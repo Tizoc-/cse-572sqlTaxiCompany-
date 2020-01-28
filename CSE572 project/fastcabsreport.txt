@@ -1,0 +1,180 @@
+
+                                 Fast Cab REPORT                                
+                                 As of 11-JUN-19                                
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+WORK_ONS                       TABLE                                            
+Name of projects an employee is involved                                        
+                                                                                
+TAXI                           TABLE                                            
+Taxi cab information                                                            
+                                                                                
+STAFFDETAILS                   TABLE                                            
+Staff Details                                                                   
+                                                                                
+STAFF                          TABLE                                            
+All active employees in the COMPANY database                                    
+                                                                                
+ROOM                           TABLE                                            
+                                                                                
+                                                                                
+PROJECT                        TABLE                                            
+Name of Projects                                                                
+                                                                                
+OFFICE                         TABLE                                            
+Fast Cab office information                                                     
+                                                                                
+JOB                            TABLE                                            
+All jobs in the COMPANY database                                                
+                                                                                
+HOTEL                          TABLE                                            
+                                                                                
+                                                                                
+GUEST                          TABLE                                            
+                                                                                
+                                                                                
+EMPLOYEE                       TABLE                                            
+Employees at CSUSB                                                              
+                                                                                
+DEPT_LOCATIONS                 TABLE                                            
+locations of Departments                                                        
+                                                                                
+DEPENDENT                      TABLE                                            
+Name of employee's dependent                                                    
+                                                                                
+DEPARTMENT                     TABLE                                            
+Employees at CSUSB                                                              
+                                                                                
+CONTRACT                       TABLE                                            
+Business Contract Information                                                   
+                                                                                
+CLIENTPRIVATE                  TABLE                                            
+All private clients in the COMPANY database                                     
+                                                                                
+CLIENTBUSINESS                 TABLE                                            
+Business Client                                                                 
+                                                                                
+BOOKING                        TABLE                                            
+                                 Page:         1                                
+
+                                 Fast Cab REPORT                                
+                                 As of 11-JUN-19                                
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+                                                                                
+                                                                                
+ALLOCATED                      TABLE                                            
+All drivers allocated to taxi                                                   
+                                                                                
+TAXIJOB                        VIEW                                             
+Total number of jobs allocated to each Taxi                                     
+                                                                                
+SPRINGRESERVATIONS             VIEW                                             
+                                                                                
+                                                                                
+SALARYMINUNIQUE                VIEW                                             
+                                                                                
+                                                                                
+SALARYMINMAX                   VIEW                                             
+                                                                                
+                                                                                
+SALARYMIN                      VIEW                                             
+                                                                                
+                                                                                
+SALARYCOMNULL                  VIEW                                             
+                                                                                
+                                                                                
+SALARYCOMMISSION               VIEW                                             
+                                                                                
+                                                                                
+RESERVEDROOMS                  VIEW                                             
+                                                                                
+                                                                                
+PRIVATECITY                    VIEW                                             
+Total number of private clients in each city                                    
+                                                                                
+NOSTAFF                        VIEW                                             
+Number of staff at each branch                                                  
+                                                                                
+NEWMIN                         VIEW                                             
+                                                                                
+                                                                                
+MISSIONINN                     VIEW                                             
+                                                                                
+                                                                                
+MINSALARY120                   VIEW                                             
+                                                                                
+                                                                                
+LUXURYROOMS                    VIEW                                             
+                                                                                
+                                                                                
+JOBTITLEMINSALARY              VIEW                                             
+                                                                                
+                                                                                
+JOBSTITLE                      VIEW                                             
+                                                                                
+                                 Page:         2                                
+
+                                 Fast Cab REPORT                                
+                                 As of 11-JUN-19                                
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+                                                                                
+JOBSDESC                       VIEW                                             
+                                                                                
+                                                                                
+JOBS                           VIEW                                             
+                                                                                
+                                                                                
+GUESTBOOKING                   VIEW                                             
+                                                                                
+                                                                                
+FONTANACONTRACTS               VIEW                                             
+Business Contract Info for Fontana Office                                       
+                                                                                
+FEMALEDRIVERS                  VIEW                                             
+Names and Info for all Female Drivers                                           
+                                                                                
+DRIVERJOB                      VIEW                                             
+Total number of jobs allocated to each driver                                   
+                                                                                
+DEPTMGR                        VIEW                                             
+                                                                                
+                                                                                
+CONTRACTTOTALS                 VIEW                                             
+Total number of jobs and miles driven for a given contract                      
+                                                                                
+CONTRACTMILES                  VIEW                                             
+Total Jobs and Miles Driven for each contract                                   
+                                                                                
+AVGSALARY                      VIEW                                             
+                                                                                
+                                                                                
+AVGMILES                       VIEW                                             
+Average number of miles driven during a job                                     
+                                                                                
+ANNUALMIN                      VIEW                                             
+                                                                                
+                                                                                
+ALLOCATEDTAXI                  VIEW                                             
+Number of Drivers Allocated to each taxi                                        
+                                                                                
+
+
+
+
+
+
+
+
+
+
+
+
+                                 Page:         3                                

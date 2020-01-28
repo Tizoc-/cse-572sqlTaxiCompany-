@@ -1,0 +1,127 @@
+SQL> @testFastcabs
+
+View dropped.
+
+
+View created.
+
+
+NO_OF_STAFF OFFI                                                                
+----------- ----                                                                
+          2 B002                                                                
+          3 B001                                                                
+
+
+View dropped.
+
+
+View created.
+
+
+NO_OF_CLIENTS CITY                                                              
+------------- ---------------                                                   
+            1 Rancho                                                            
+            1 Fontana                                                           
+            1 Riverside                                                         
+            1 San Bernardino                                                    
+
+
+View dropped.
+
+
+View created.
+
+
+STAFF FNAME      LNAME      S PHONE      DOB       OFFI DRIVE                   
+----- ---------- ---------- - ---------- --------- ---- -----                   
+S0002 Felipe     Valadez    F 4435555    20-MAR-86 B001 D0002                   
+S0004 Rocio      Tabatai    F 8795555    10-SEP-87 B002 D0001                   
+
+
+View dropped.
+
+
+View created.
+
+
+CONTR NO_OF_JOBS TOTAL_MILES_DRIVEN                                             
+----- ---------- ------------------                                             
+A0001          1                 40                                             
+A0002          1                 20                                             
+A0003          1                  5                                             
+
+
+View dropped.
+
+
+View created.
+
+
+CONTR     NOJOBS        FEE CLIEN OFFI                                          
+----- ---------- ---------- ----- ----                                          
+A0001        100         50 C1001 B001                                          
+A0003        300         50 C1003 B001                                          
+
+
+View dropped.
+
+
+View created.
+
+
+NO_OF_DRIVERS TAXII                                                             
+------------- -----                                                             
+            2 T0001                                                             
+            1 T0002                                                             
+            1 T0004                                                             
+
+
+View dropped.
+
+
+View created.
+
+
+NO_OF_JOBS STAFF                                                                
+---------- -----                                                                
+         3 S0002                                                                
+         3 S0004                                                                
+
+
+View dropped.
+
+
+View created.
+
+
+NO_OF_JOBS TAXII                                                                
+---------- -----                                                                
+         4 T0001                                                                
+         1 T0002                                                                
+         1 T0004                                                                
+
+
+View dropped.
+
+
+View created.
+
+
+AVG_MILES_DRIVEN                                                                
+----------------                                                                
+            27.5                                                                
+
+
+View dropped.
+
+
+View created.
+
+
+CONTR NO_OF_JOBS TOTAL_MILES_DRIVEN                                             
+----- ---------- ------------------                                             
+A0001          1                 40                                             
+A0002          1                 20                                             
+A0003          1                  5                                             
+
+SQL> spool off

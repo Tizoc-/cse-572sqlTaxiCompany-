@@ -1,0 +1,489 @@
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+ALLOCATED                      TABLE                                            
+All drivers allocated to taxi                                                   
+                                                                                
+BOOKING                        TABLE                                            
+                                                                                
+                                                                                
+CLIENTBUSINESS                 TABLE                                            
+Business Client                                                                 
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CLIENTPRIVATE                  TABLE                                            
+All private clients in the COMPANY database                                     
+                                                                                
+CONTRACT                       TABLE                                            
+Business Contract Information                                                   
+                                                                                
+DEPARTMENT                     TABLE                                            
+Employees at CSUSB                                                              
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+DEPENDENT                      TABLE                                            
+Name of employee's dependent                                                    
+                                                                                
+DEPT_LOCATIONS                 TABLE                                            
+locations of Departments                                                        
+                                                                                
+EMPLOYEE                       TABLE                                            
+Employees at CSUSB                                                              
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+GUEST                          TABLE                                            
+                                                                                
+                                                                                
+HOTEL                          TABLE                                            
+                                                                                
+                                                                                
+JOB                            TABLE                                            
+All jobs in the COMPANY database                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+OFFICE                         TABLE                                            
+Fast Cab office information                                                     
+                                                                                
+PROJECT                        TABLE                                            
+Name of Projects                                                                
+                                                                                
+ROOM                           TABLE                                            
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFF                          TABLE                                            
+All active employees in the COMPANY database                                    
+                                                                                
+STAFFDETAILS                   TABLE                                            
+Staff Details                                                                   
+                                                                                
+TAXI                           TABLE                                            
+Taxi cab information                                                            
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+WORK_ONS                       TABLE                                            
+Name of projects an employee is involved                                        
+                                                                                
+TAXIJOB                        VIEW                                             
+Total number of jobs allocated to each Taxi                                     
+                                                                                
+SPRINGRESERVATIONS             VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+SALARYMINUNIQUE                VIEW                                             
+                                                                                
+                                                                                
+SALARYMINMAX                   VIEW                                             
+                                                                                
+                                                                                
+SALARYMIN                      VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+SALARYCOMNULL                  VIEW                                             
+                                                                                
+                                                                                
+SALARYCOMMISSION               VIEW                                             
+                                                                                
+                                                                                
+RESERVEDROOMS                  VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+PRIVATECITY                    VIEW                                             
+Total number of private clients in each city                                    
+                                                                                
+NOSTAFF                        VIEW                                             
+Number of staff at each branch                                                  
+                                                                                
+NEWMIN                         VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+MISSIONINN                     VIEW                                             
+                                                                                
+                                                                                
+MINSALARY120                   VIEW                                             
+                                                                                
+                                                                                
+LUXURYROOMS                    VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOBTITLEMINSALARY              VIEW                                             
+                                                                                
+                                                                                
+JOBSTITLE                      VIEW                                             
+                                                                                
+                                                                                
+JOBSDESC                       VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOBS                           VIEW                                             
+                                                                                
+                                                                                
+GUESTBOOKING                   VIEW                                             
+                                                                                
+                                                                                
+FONTANACONTRACTS               VIEW                                             
+Business Contract Info for Fontana Office                                       
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+FEMALEDRIVERS                  VIEW                                             
+Names and Info for all Female Drivers                                           
+                                                                                
+DRIVERJOB                      VIEW                                             
+Total number of jobs allocated to each driver                                   
+                                                                                
+DEPTMGR                        VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CONTRACTTOTALS                 VIEW                                             
+Total number of jobs and miles driven for a given contract                      
+                                                                                
+CONTRACTMILES                  VIEW                                             
+Total Jobs and Miles Driven for each contract                                   
+                                                                                
+AVGSALARY                      VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+AVGMILES                       VIEW                                             
+Average number of miles driven during a job                                     
+                                                                                
+ANNUALMIN                      VIEW                                             
+                                                                                
+                                                                                
+ALLOCATEDTAXI                  VIEW                                             
+Number of Drivers Allocated to each taxi                                        
+                                                                                
+
+48 rows selected.
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+OFFICE                         OFFICENO                                         
+Unique Office NO                                                                
+                                                                                
+OFFICE                         STRADDRESS                                       
+Office Street Address                                                           
+                                                                                
+OFFICE                         CITY                                             
+Office City Location                                                            
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+OFFICE                         POSTCODE                                         
+Office Zipcode                                                                  
+                                                                                
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFF                          STAFFID                                          
+Employee???s unique staffID                                                     
+                                                                                
+STAFF                          FNAME                                            
+Employee???s fisrt name                                                         
+                                                                                
+STAFF                          LNAME                                            
+Employee???s last name                                                          
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFF                          SEX                                              
+Employee???s sex                                                                
+                                                                                
+STAFF                          DOB                                              
+Employee???s date of birth                                                      
+                                                                                
+STAFF                          PHONE                                            
+Employee???s phone number                                                       
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFF                          OFFICENO                                         
+Employee???s office                                                             
+                                                                                
+
+7 rows selected.
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFFDETAILS                   STAFFID                                          
+Staff ID                                                                        
+                                                                                
+STAFFDETAILS                   BONUS                                            
+Staff Bonus                                                                     
+                                                                                
+STAFFDETAILS                   DRIVERID                                         
+Staff Driver ID                                                                 
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFFDETAILS                   OFFICENO                                         
+                                                                                
+                                                                                
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CLIENTPRIVATE                  CLIENTID                                         
+Client???s unique client ID                                                     
+                                                                                
+CLIENTPRIVATE                  PHONENO                                          
+Clients phone number                                                            
+                                                                                
+CLIENTPRIVATE                  STRADDRESS                                       
+Client???s address                                                              
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CLIENTPRIVATE                  CITY                                             
+Client???s city                                                                 
+                                                                                
+CLIENTPRIVATE                  NAME                                             
+Client???s name                                                                 
+                                                                                
+CLIENTPRIVATE                  OFFICENO                                         
+                                                                                
+                                                                                
+
+6 rows selected.
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CLIENTBUSINESS                 CLIENTID                                         
+Unqiue ID of Client                                                             
+                                                                                
+CLIENTBUSINESS                 BNAME                                            
+Name of Business                                                                
+                                                                                
+CLIENTBUSINESS                 PHONENO                                          
+Business phone #                                                                
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CLIENTBUSINESS                 STRADDRESS                                       
+Business Street Address                                                         
+                                                                                
+CLIENTBUSINESS                 CITY                                             
+Business City                                                                   
+                                                                                
+CLIENTBUSINESS                 OFFICENO                                         
+                                                                                
+                                                                                
+
+6 rows selected.
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CONTRACT                       CONTRACTNO                                       
+Unique Contract Number                                                          
+                                                                                
+CONTRACT                       NOJOBS                                           
+Number of Jobs                                                                  
+                                                                                
+CONTRACT                       FEE                                              
+Agreed upon fee for contract                                                    
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CONTRACT                       OFFICENO                                         
+Associated office number                                                        
+                                                                                
+CONTRACT                       CLIENTID                                         
+Associated client ID                                                            
+                                                                                
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOB                            JOBID                                            
+Job???s unique client ID                                                        
+                                                                                
+JOB                            PICKUPDATE                                       
+Date job is done                                                                
+                                                                                
+JOB                            STRADDRESS                                       
+Job locations                                                                   
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOB                            CITY                                             
+Job???s city                                                                    
+                                                                                
+JOB                            POSTCODE                                         
+Job???s postcode                                                                
+                                                                                
+JOB                            MILESDRIVEN                                      
+Job???s mile driven                                                             
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOB                            CHARGEMADE                                       
+Jobs fee                                                                        
+                                                                                
+JOB                            TAXIID                                           
+Job???s assigned taxi                                                           
+                                                                                
+JOB                            CLIENTID                                         
+Jobs???s assigned client                                                        
+                                                                                
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOB                            CONTRACTNO                                       
+Jobs???s contract number                                                        
+                                                                                
+JOB                            STAFFID                                          
+Job???s assigned staff                                                          
+                                                                                
+JOB                            JOBSTATUS                                        
+Client???s address                                                              
+                                                                                
+
+12 rows selected.
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+ALLOCATED                      TAXIID                                           
+Drivers allocated Taxi                                                          
+                                                                                
+ALLOCATED                      STAFFID                                          
+Taxis allocated driver                                                          
+                                                                                
+ALLOCATED                      ALLOCATEDDATE                                    
+Date driver is assigned to a driver                                             
+                                                                                
+
+
+TABLE_NAME                     COLUMN_NAME                                      
+------------------------------ ------------------------------                   
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+TAXI                           TAXIID                                           
+Unique Taxi ID                                                                  
+                                                                                
+TAXI                           STAFFID                                          
+ID of owner                                                                     
+                                                                                
+TAXI                           DRIVERID                                         
+ID of current Driver                                                            
+                                                                                
+

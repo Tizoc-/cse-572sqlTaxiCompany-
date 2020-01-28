@@ -1,0 +1,87 @@
+SQL> desc Office;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ OFFICENO                                  NOT NULL CHAR(4)
+ STRADDRESS                                NOT NULL VARCHAR2(20)
+ CITY                                      NOT NULL VARCHAR2(15)
+ POSTCODE                                  NOT NULL CHAR(5)
+
+SQL> desc Staff;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STAFFID                                   NOT NULL CHAR(5)
+ FNAME                                     NOT NULL VARCHAR2(10)
+ LNAME                                     NOT NULL VARCHAR2(10)
+ SEX                                       NOT NULL CHAR(1)
+ DOB                                       NOT NULL DATE
+ PHONE                                     NOT NULL VARCHAR2(10)
+ OFFICENO                                           CHAR(4)
+
+SQL> desc Staffdetails;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STAFFID                                   NOT NULL CHAR(5)
+ BONUS                                              VARCHAR2(5)
+ DRIVERID                                           CHAR(5)
+ OFFICENO                                           CHAR(4)
+
+SQL> desc ClientPrivate;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CLIENTID                                  NOT NULL CHAR(5)
+ PHONENO                                            VARCHAR2(10)
+ STRADDRESS                                NOT NULL VARCHAR2(20)
+ CITY                                      NOT NULL VARCHAR2(15)
+ NAME                                               VARCHAR2(20)
+ OFFICENO                                           CHAR(4)
+
+SQL> desc ClientBusiness;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CLIENTID                                  NOT NULL CHAR(5)
+ BNAME                                              VARCHAR2(20)
+ PHONENO                                   NOT NULL VARCHAR2(10)
+ STRADDRESS                                NOT NULL VARCHAR2(20)
+ CITY                                               VARCHAR2(15)
+ OFFICENO                                           CHAR(4)
+
+SQL> desc Contract;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CONTRACTNO                                NOT NULL CHAR(5)
+ NOJOBS                                             NUMBER(5)
+ FEE                                       NOT NULL NUMBER(10,2)
+ OFFICENO                                           CHAR(4)
+ CLIENTID                                  NOT NULL CHAR(5)
+
+SQL> desc Job;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ JOBID                                     NOT NULL CHAR(5)
+ PICKUPDATE                                         DATE
+ STRADDRESS                                NOT NULL VARCHAR2(20)
+ CITY                                      NOT NULL VARCHAR2(15)
+ POSTCODE                                           CHAR(5)
+ MILESDRIVEN                               NOT NULL NUMBER(4)
+ CHARGEMADE                                NOT NULL VARCHAR2(4)
+ TAXIID                                             CHAR(5)
+ CLIENTID                                           CHAR(5)
+ CONTRACTNO                                         CHAR(5)
+ STAFFID                                            CHAR(5)
+ JOBSTATUS                                          VARCHAR2(30)
+
+SQL> desc Allocated;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TAXIID                                    NOT NULL CHAR(5)
+ STAFFID                                   NOT NULL CHAR(5)
+ ALLOCATEDDATE                             NOT NULL DATE
+
+SQL> desc Taxi;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TAXIID                                    NOT NULL CHAR(5)
+ STAFFID                                            CHAR(5)
+ DRIVERID                                           CHAR(5)
+
+SQL> spool off

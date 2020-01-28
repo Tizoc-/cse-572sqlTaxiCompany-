@@ -1,0 +1,107 @@
+-- CALIFORNIA STATE UNIVERSITY, SAN BERNARDINO
+-- DEPARTMENT OF COMPUTER SCIENCE
+-- Course: CSE572
+-- Student Names: Phillip Nahhas, Paul Alvarez
+--
+-- FASTCABS DATABASE PROJECT
+-- CREATION OF TABLES
+
+SET CONSTRAINTS ALL DEFERRED;
+DROP TABLE Office CASCADE CONSTRAINTS;
+CREATE TABLE Office(
+	officeNo CHAR(4)  ,
+	strAddress VARCHAR(20) UNIQUE NOT NULL,
+	City VARCHAR(15)   NOT NULL,
+	postcode char(5) NOT NULL,
+	CONSTRAINTS Office_PK PRIMARY KEY (officeNo)
+);
+
+DROP TABLE Staff CASCADE CONSTRAINTS;
+CREATE TABLE Staff(
+	staffId CHAR(5) ,
+	fname VARCHAR(10) NOT NULL,
+	lname VARCHAR(10) NOT NULL,
+	sex   char(1) NOT NULL,
+	DOB   DATE NOT NULL,
+	Phone VARCHAR(10) NOT NULL,
+	officeNo CHAR(4),
+	CONSTRAINTS Staff_PK PRIMARY KEY (staffID)  
+);
+
+DROP TABLE Staffdetails CASCADE CONSTRAINTS;
+CREATE TABLE Staffdetails(
+	staffId CHAR(5) ,
+	bonus VARCHAR(5),
+	DriverID CHAR(5),
+	officeNo CHAR(4),
+	CONSTRAINTS Staffdetails_PK PRIMARY KEY(staffID)
+);
+
+DROP TABLE ClientPrivate CASCADE CONSTRAINTS;
+CREATE TABLE ClientPrivate(
+	ClientID CHAR(5),
+	phoneNo VARCHAR(10), 
+	strAddress VARCHAR2(20) NOT NULL, 
+	city VARCHAR(15) NOT NULL, 
+	name VARCHAR(20),
+	officeNo CHAR(4),
+	CONSTRAINTS ClientPrivate_PK PRIMARY KEY (ClientID)
+);
+
+DROP TABLE ClientBusiness CASCADE CONSTRAINTS;
+CREATE TABLE ClientBusiness(
+	ClientID CHAR(5),
+	Bname VARCHAR(20), 
+	phoneNo VARCHAR(10) NOT NULL, 
+	strAddress VARCHAR(20) NOT NULL, 
+	city VARCHAR(15),
+        officeNo CHAR(4),
+	CONSTRAINTS ClientBusiness_PK PRIMARY KEY (ClientID)
+);
+
+DROP TABLE Job CASCADE CONSTRAINTS;
+CREATE TABLE Job(
+	jobID CHAR(5),
+	pickupDate DATE, 
+	strAddress VARCHAR(20) NOT NULL, 
+	city VARCHAR(15) NOT NULL, 
+	postCode CHAR(5),
+	milesDriven NUMBER(4) NOT NULL, 
+	chargemade VARCHAR(4) NOT NULL, 
+	TaxiID CHAR(5),
+	ClientID CHAR(5), 
+	contractNo CHAR(5), 
+	staffID CHAR(5),
+	jobStatus VARCHAR2(30),
+	CONSTRAINTS Job_PK PRIMARY KEY (jobID)
+);
+
+DROP TABLE Contract CASCADE CONSTRAINTS;
+CREATE TABLE Contract(
+	contractNo CHAR(5),
+	noJobs NUMBER(5), 
+	fee NUMBER(10,2) NOT NULL,
+	officeNo CHAR(4), 
+	ClientID CHAR(5)NOT NULL, 
+	CONSTRAINTS Contract_PK PRIMARY KEY (contractNo)
+);
+
+DROP TABLE Allocated CASCADE CONSTRAINTS;
+CREATE TABLE Allocated(
+	TaxiID CHAR(5),
+	staffID CHAR(5), 
+	allocatedDate DATE NOT NULL,
+	CONSTRAINTS Allocated_PK PRIMARY KEY (TaxiID,StaffID)
+);
+
+DROP TABLE Taxi CASCADE CONSTRAINTS;
+CREATE TABLE Taxi(
+	TaxiID CHAR(5),
+	staffID CHAR(5), 
+	DriverID CHAR(5),
+	CONSTRAINTS Taxi_PK PRIMARY KEY (TaxiID)
+);
+  
+SET CONSTRAINTS ALL IMMEDIATE;
+
+

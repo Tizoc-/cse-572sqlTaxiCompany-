@@ -1,0 +1,229 @@
+SQL> SELECT * FROM user_tab_comments;
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+WORK_ONS                       TABLE                                            
+Name of projects an employee is involved                                        
+                                                                                
+TAXIJOB                        VIEW                                             
+Total number of jobs allocated to each Taxi                                     
+                                                                                
+TAXI                           TABLE                                            
+Taxi cab information                                                            
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+STAFFDETAILS                   TABLE                                            
+Staff Details                                                                   
+                                                                                
+STAFF                          TABLE                                            
+All active employees in the COMPANY database                                    
+                                                                                
+SPRINGRESERVATIONS             VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+SALARYMINUNIQUE                VIEW                                             
+                                                                                
+                                                                                
+SALARYMINMAX                   VIEW                                             
+                                                                                
+                                                                                
+SALARYMIN                      VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+SALARYCOMNULL                  VIEW                                             
+                                                                                
+                                                                                
+SALARYCOMMISSION               VIEW                                             
+                                                                                
+                                                                                
+ROOM                           TABLE                                            
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+RESERVEDROOMS                  VIEW                                             
+                                                                                
+                                                                                
+PROJECT                        TABLE                                            
+Name of Projects                                                                
+                                                                                
+PRIVATECITY                    VIEW                                             
+Total number of private clients in each city                                    
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+OFFICE                         TABLE                                            
+Fast Cab office information                                                     
+                                                                                
+NOSTAFF                        VIEW                                             
+Number of staff at each branch                                                  
+                                                                                
+NEWMIN                         VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+MISSIONINN                     VIEW                                             
+                                                                                
+                                                                                
+MINSALARY120                   VIEW                                             
+                                                                                
+                                                                                
+LUXURYROOMS                    VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOBTITLEMINSALARY              VIEW                                             
+                                                                                
+                                                                                
+JOBSTITLE                      VIEW                                             
+                                                                                
+                                                                                
+JOBSDESC                       VIEW                                             
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+JOBS                           VIEW                                             
+                                                                                
+                                                                                
+JOB                            TABLE                                            
+All jobs in the COMPANY database                                                
+                                                                                
+HOTEL                          TABLE                                            
+                                                                                
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+GUESTBOOKING                   VIEW                                             
+                                                                                
+                                                                                
+GUEST                          TABLE                                            
+                                                                                
+                                                                                
+FONTANACONTRACTS               VIEW                                             
+Business Contract Info for Fontana Office                                       
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+FEMALEDRIVERS                  VIEW                                             
+Names and Info for all Female Drivers                                           
+                                                                                
+EMPLOYEE                       TABLE                                            
+Employees at CSUSB                                                              
+                                                                                
+DRIVERJOB                      VIEW                                             
+Total number of jobs allocated to each driver                                   
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+DEPT_LOCATIONS                 TABLE                                            
+locations of Departments                                                        
+                                                                                
+DEPTMGR                        VIEW                                             
+                                                                                
+                                                                                
+DEPENDENT                      TABLE                                            
+Name of employee's dependent                                                    
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+DEPARTMENT                     TABLE                                            
+Employees at CSUSB                                                              
+                                                                                
+CONTRACTTOTALS                 VIEW                                             
+Total number of jobs and miles driven for a given contract                      
+                                                                                
+CONTRACTMILES                  VIEW                                             
+Total Jobs and Miles Driven for each contract                                   
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+CONTRACT                       TABLE                                            
+Business Contract Information                                                   
+                                                                                
+CLIENTPRIVATE                  TABLE                                            
+All private clients in the COMPANY database                                     
+                                                                                
+CLIENTBUSINESS                 TABLE                                            
+Business Client                                                                 
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+BOOKING                        TABLE                                            
+                                                                                
+                                                                                
+AVGSALARY                      VIEW                                             
+                                                                                
+                                                                                
+AVGMILES                       VIEW                                             
+Average number of miles driven during a job                                     
+                                                                                
+
+TABLE_NAME                     TABLE_TYPE                                       
+------------------------------ -----------                                      
+COMMENTS                                                                        
+--------------------------------------------------------------------------------
+ANNUALMIN                      VIEW                                             
+                                                                                
+                                                                                
+ALLOCATEDTAXI                  VIEW                                             
+Number of Drivers Allocated to each taxi                                        
+                                                                                
+ALLOCATED                      TABLE                                            
+All drivers allocated to taxi                                                   
+                                                                                
+
+48 rows selected.
+
+SQL> spool off
